@@ -8,9 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@buf/ahmeddarwish_devkit-api.bufbuild_es':
+        specifier: 2.4.0-20250513140625-d5ce5f9cbcad.1
+        version: 2.4.0-20250513140625-d5ce5f9cbcad.1(@bufbuild/protobuf@2.4.0)
       '@buf/ahmeddarwish_mcp-client-api.bufbuild_es':
-        specifier: 2.4.0-20250518133247-aa4723b154df.1
-        version: 2.4.0-20250518133247-aa4723b154df.1(@bufbuild/protobuf@2.4.0)
+        specifier: 2.4.0-20250518160830-3bc6a6575c46.1
+        version: 2.4.0-20250518160830-3bc6a6575c46.1(@bufbuild/protobuf@2.4.0)
       '@connectrpc/connect':
         specifier: ^2.0.2
         version: 2.0.2(@bufbuild/protobuf@2.4.0)
@@ -59,8 +62,18 @@ packages:
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
 
-  '@buf/ahmeddarwish_mcp-client-api.bufbuild_es@2.4.0-20250518133247-aa4723b154df.1':
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/ahmeddarwish_mcp-client-api.bufbuild_es/-/ahmeddarwish_mcp-client-api.bufbuild_es-2.4.0-20250518133247-aa4723b154df.1.tgz}
+  '@buf/ahmeddarwish_devkit-api.bufbuild_es@2.4.0-20250513140625-d5ce5f9cbcad.1':
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/ahmeddarwish_devkit-api.bufbuild_es/-/ahmeddarwish_devkit-api.bufbuild_es-2.4.0-20250513140625-d5ce5f9cbcad.1.tgz}
+    peerDependencies:
+      '@bufbuild/protobuf': ^2.4.0
+
+  '@buf/ahmeddarwish_mcp-client-api.bufbuild_es@2.4.0-20250518160830-3bc6a6575c46.1':
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/ahmeddarwish_mcp-client-api.bufbuild_es/-/ahmeddarwish_mcp-client-api.bufbuild_es-2.4.0-20250518160830-3bc6a6575c46.1.tgz}
+    peerDependencies:
+      '@bufbuild/protobuf': ^2.4.0
+
+  '@buf/bufbuild_protovalidate.bufbuild_es@2.4.0-20240920164238-5a7b106cbb87.1':
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/bufbuild_protovalidate.bufbuild_es/-/bufbuild_protovalidate.bufbuild_es-2.4.0-20240920164238-5a7b106cbb87.1.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^2.4.0
 
@@ -570,7 +583,16 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@buf/ahmeddarwish_mcp-client-api.bufbuild_es@2.4.0-20250518133247-aa4723b154df.1(@bufbuild/protobuf@2.4.0)':
+  '@buf/ahmeddarwish_devkit-api.bufbuild_es@2.4.0-20250513140625-d5ce5f9cbcad.1(@bufbuild/protobuf@2.4.0)':
+    dependencies:
+      '@buf/bufbuild_protovalidate.bufbuild_es': 2.4.0-20240920164238-5a7b106cbb87.1(@bufbuild/protobuf@2.4.0)
+      '@bufbuild/protobuf': 2.4.0
+
+  '@buf/ahmeddarwish_mcp-client-api.bufbuild_es@2.4.0-20250518160830-3bc6a6575c46.1(@bufbuild/protobuf@2.4.0)':
+    dependencies:
+      '@bufbuild/protobuf': 2.4.0
+
+  '@buf/bufbuild_protovalidate.bufbuild_es@2.4.0-20240920164238-5a7b106cbb87.1(@bufbuild/protobuf@2.4.0)':
     dependencies:
       '@bufbuild/protobuf': 2.4.0
 
